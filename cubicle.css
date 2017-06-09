@@ -1,0 +1,76 @@
+:global(.cubicle-table) {
+  -webkit-animation: fadeIn 0.5s; /* Safari 4+ */
+  -moz-animation:    fadeIn 0.5s; /* Fx 5+ */
+  -o-animation:      fadeIn 0.5s; /* Opera 12+ */
+  animation:         fadeIn 0.5s; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+:global(.cubicle-columns-container) {
+    width: 80%;
+    display: inline-block;
+    overflow-x: scroll;
+}
+:global(.cubicle-rows-container) {
+    width: 20%;
+    display: inline-block;
+    overflow-x: scroll;
+}
+:global(.cubicle-columns) {
+    table-layout: fixed;
+    background-color: #EEF8FB;
+    overflow-x: scroll;
+    width: 100%;
+    float: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+:global(.cubicle-rows) {
+    table-layout: fixed;
+    background-color: #EEF8FB;
+    overflow-x: scroll;
+    border-top-left-radius: 10px;
+    font-weight: 700;
+}
+:global(.cubicle-data) {
+    table-layout: fixed;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+:global(.cubicle-rows-td) {
+    height: 45px;
+    width: 80px;
+    border-right: 1px solid #acddec;
+    border-bottom: 1px solid #EEF8FB;
+    padding: 10px;
+}
+:global(.cubicle-columns-td) {
+    height: 45px;
+    width: 80px;
+    border-bottom: 1px solid #acddec;
+    padding: 10px;
+}
+:global(.cubicle-data-td) {
+    height: 45px;
+    width: 80px;
+    border-bottom: 1px solid #acddec;
+    border-left: 1px solid #EEF8FB;
+    border-right: 1px solid #EEF8FB;
+    padding: 10px;
+}
