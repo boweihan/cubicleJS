@@ -9,8 +9,11 @@ http://www.directionsmag.com/entry/creating-and-manipulating-multidimensional-ta
 To use the library, simple import cubicle.js as an es6 module along with cubicle.css. You can then create a new cubicle object and pass it data as so:
 
 this.cubicle = new Cubicle();
+
 this.cubicle.setRows(this.mockData.rows1());
+
 this.cubicle.setColumns(this.mockData.cols1());
+
 this.cubicle.setData(this.mockData.data1());
 
 let html = this.cubicle.getTable();
