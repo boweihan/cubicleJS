@@ -8,14 +8,14 @@ http://www.directionsmag.com/entry/creating-and-manipulating-multidimensional-ta
 
 To use the library, simple import cubicle.js as an es6 module along with cubicle.css. You can then create a new cubicle object and pass it data as so:
 
-this.cubicle = new Cubicle();
+**this.cubicle = new Cubicle();**
 
-this.cubicle.setRows(this.mockData.rows1());
+**this.cubicle.setRows(this.mockData.rows1());**
 
-this.cubicle.setColumns(this.mockData.cols1());
+**this.cubicle.setColumns(this.mockData.cols1());**
 
-this.cubicle.setData(this.mockData.data1());
+**this.cubicle.setData(this.mockData.data1());**
 
-let html = this.cubicle.getTable();
+**let html = this.cubicle.getTable();**
 
 Check out cubicle.data.js for examples on how to pass in data to the table. The library returns a string of html at the moment that is perfect for frameworks such as React.
